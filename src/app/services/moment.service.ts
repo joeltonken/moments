@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { Moment } from '../Moment';
 
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.development';
 
 @Injectable({
   providedIn: 'root'

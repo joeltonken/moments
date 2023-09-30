@@ -1,6 +1,19 @@
 # Moments
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+This project is a full-stack application built with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3 on the front-end and AdonisJS on the back-end.
+
+## Backend
+
+To get started, follow these steps:
+1. Clone the repository: `git clone https://github.com/matheusbattisti/curso_adonis_api_yt.git`
+2. Navigate to the project directory: `cd curso_adonis_api_yt`
+3. Install the dependencies: `npm install`
+4. Generate a secret key: `node ace generate:key`
+5. Create a new `.env.example` file by copying the `.env.example` file and replacing the `APP_KEY` value with the generated secret key.
+6. Run the database migrations: `node ace migration:run`
+7. Start the server: `node ace serve`Once the server is running, you can make requests to the API. Contributions are welcome under the MIT License.
+
+For more details, please visit the [GitHub repository](https://github.com/matheusbattisti/curso_adonis_api_yt).
 
 ## Development server
 

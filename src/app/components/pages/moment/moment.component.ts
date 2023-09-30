@@ -57,11 +57,11 @@ export class MomentComponent implements OnInit {
   }
 
   async removeHandler(id: number) {
-    await this.momentService.removeMoment(id).subscribe();
-
-    this.messagesService.add('Momento excluido com sucesso!');
-
-    this.router.navigate(['/']);
+    await this.momentService.removeMoment(id).subscribe({
+      next: () => {
+        this.messagesService.add('Momento excluído com sucesso!'); this.router.navigate(['/']);
+      }
+    });
   }
 
   async onSubmit(formDirective: FormGroupDirective) {
@@ -79,6 +79,6 @@ export class MomentComponent implements OnInit {
 
     this.commentForm.reset();
 
-    formDirective.resetForm();   
+    formDirective.resetForm();
   }
 }
